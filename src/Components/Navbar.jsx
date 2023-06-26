@@ -8,9 +8,10 @@ const Navbar = () => {
 
   return (
     <nav>
-      <Link to={rutes.home}><h1>Home</h1></Link>
-      <Link to={rutes.favs}><h1>Favoritos</h1></Link>
-      <Link to={rutes.contact}><h1>Contacto</h1></Link>
+      <img src="./DH.ico" alt='DH-logo'/>
+      <Link to={rutes.home}><h3>Home</h3></Link>
+      <Link to={rutes.favs}><h3>Favoritos</h3></Link>
+      <Link to={rutes.contact}><h3>Contacto</h3></Link>
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
       <button className="themeButton">Change theme</button>
     </nav>

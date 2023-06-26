@@ -1,48 +1,45 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
+  background-color: rgba(0, 0, 0, 0.89);
   padding: 10px;
   border: none;
   width: 100%;
   cursor: pointer;
+  font-size: 16px;
+  color: #c2c2c2;
 }
 .themeButton{
-  background-color: #757575;
-  color: #c2c2c2;
+  background-color: #000000;
+  color: #e2e2e2;
   width: 7rem;
   height: 2.5rem;
   margin-left: 5rem;
   border: #c2c2c2 1px solid;
-  border-radius: 20px;
+  border-radius: 2px;
   cursor: pointer;
 }
 
-h1{
+h1, h2, p{
   text-align: center;
 }
 
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
+  justify-content:center;
   align-items: center;
-  padding: 1rem;
-  margin-left: 2rem;
 }
 
-a{
+nav > a{
   color: #000;
   text-decoration: none;
   margin: 10px;
@@ -60,15 +57,18 @@ footer {
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
   height: 40px;
   margin-top: 2rem;
+  background-color: rgb(228, 92, 92);
+}
+footer > img{
+  margin-right: 20px;
+}
+.logo{
+  width: 200px;
+  margin-right: 50px;
 }
 
-footer > img{
-  width: 200px;
-  margin: 0;
-}
 footer > p{
   margin: 0;
   padding-top: 0.7rem;
@@ -85,45 +85,48 @@ form{
 
 .card{
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
-  align-items: start;
-  width: 200px;
-  height: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  align-items: center;
+  width: 300px;
+  height: auto;
   border: 0.5px solid rgb(136, 136, 136);
 }
 
 .card:hover{
   border: 0.5px solid rgb(206, 217, 142);
 }
+.img_card{
+  height: 300px;
+  width: 300px;
+}
 
 .card-grid{
   display: flex;
-  justify-content: space-evenly;
+  justify-content:center;
   gap: 1rem;
-  width: 90vw;
   height: auto;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: auto 15rem;
 }
 
+
 table {
-border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    display: table;
-    border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  display: table;
+  border: 1px solid #ccc;
+  margin: auto;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #929292;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #ffffff;
 }
 
 .dark{

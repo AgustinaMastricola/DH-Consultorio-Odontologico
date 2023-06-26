@@ -15,9 +15,22 @@ const Detail = () => {
   },[url])
 
   return (
-    <>
+    <> 
       <h1>Detail Dentist id </h1>
-      <p>Nombre: {dentista.name} Email: {dentista.email} WebSite: {dentista.website}</p>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Tel</th>
+          <th>WebSite</th>
+        </tr>
+        <tr>
+          <td>{dentista.name}</td>
+          <td>{dentista.email}</td>
+          <td>{dentista.phone}</td>
+          <td>{dentista.website}</td>
+        </tr>
+      </table>
     </>
   )
 }
