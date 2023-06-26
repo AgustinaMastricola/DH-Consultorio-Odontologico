@@ -16,7 +16,7 @@ const Detail = () => {
 
   return (
     <> 
-      <h1>Detail Dentist id </h1>
+      <h1>Detalle del Dentista</h1>
       <table>
         <tr>
           <th>Nombre</th>

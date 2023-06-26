@@ -15,7 +15,7 @@ const Card = ({ name, username, id }) => {
     </Link>
     <h4>{name}</h4> 
     {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
-    <button onClick={addFav} className="favButton">Add fav</button>
+    <button onClick={addFav} className="favButton">Agregar a favoritos</button>
     </div>
   );
 };

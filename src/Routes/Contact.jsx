@@ -23,8 +23,8 @@ const Contact = () => {
   }
   return (
     <div>
-      <h2>Want to know more?</h2>
-      <p>Send us your questions and we will contact you</p>
+      <h1>Quieres saber mas?</h1>
+      <p>Envianos tus datos así te contactamos!</p>
       <Form handleSubmit={handleSubmit} setData={setData}/>
       {error && <p style={{color:"rgb(198, 43, 43)"}}>Por favor verifique su información nuevamente</p>}
       {success && <p style={{color:"rgb(81, 87, 50)"}}>Gracias {data.name}, te contactaremos cuanto antes vía email.</p> }

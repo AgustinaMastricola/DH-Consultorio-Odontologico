@@ -13,7 +13,7 @@ const Navbar = () => {
       <Link to={rutes.favs}><h3>Favoritos</h3></Link>
       <Link to={rutes.contact}><h3>Contacto</h3></Link>
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      <button className="themeButton">Change theme</button>
+      <button className="themeButton">Cambiar tema</button>
     </nav>
   )
 }
