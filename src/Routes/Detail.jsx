@@ -14,7 +14,6 @@ const Detail = () => {
     .then((data)=> setDentista(data))
   },[url])
 
-  console.log(dentista);
   return (
     <>
       <h1>Detail Dentist id </h1>
