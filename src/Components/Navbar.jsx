@@ -8,14 +8,11 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div>
-        <Link to={rutes.home}><h1>Home</h1></Link>
-        <Link to={rutes.detail}><h1>Dentista</h1></Link>
-        <Link to={rutes.favs}><h1>Favoritos</h1></Link>
-        <Link to={rutes.contact}><h1>Contacto</h1></Link>
-      </div>
+      <Link to={rutes.home}><h1>Home</h1></Link>
+      <Link to={rutes.favs}><h1>Favoritos</h1></Link>
+      <Link to={rutes.contact}><h1>Contacto</h1></Link>
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      <button>Change theme</button>
+      <button className="themeButton">Change theme</button>
     </nav>
   )
 }

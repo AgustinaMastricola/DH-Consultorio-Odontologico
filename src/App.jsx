@@ -9,6 +9,7 @@ import Contact from "./Routes/Contact";
 import { rutes } from './Components/utils/rutes'
 
 
+
 function App() {
   return (
       <div className="App">
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route path={rutes.home} element={<Home/>}/>
             <Route path={rutes.detail} element={<Detail/>}/>
+            <Route path="/dentista/:id" element={<Detail/>}/>
             <Route path={rutes.favs} element={<Favs/>}/>
             <Route path={rutes.contact} element={<Contact/>}/>
           </Routes>
