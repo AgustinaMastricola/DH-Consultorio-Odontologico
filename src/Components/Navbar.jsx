@@ -18,7 +18,12 @@ const Navbar = () => {
       <Link to={rutes.favs}><h3>Favoritos</h3></Link>
       <Link to={rutes.contact}><h3>Contacto</h3></Link>
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      <button onClick={changeTheme} className= {themeState? 'darkButton': ''}>{themeState? 'Oscuro': 'Claro'}</button>
+      <button 
+        onClick={changeTheme} 
+        className= {themeState? 'darkButton': ''}
+      >
+        {themeState? <img src={rutes.toLight} alt="cambiar tema a oscuro"/> : <img src={rutes.toDark} alt="cambiar tema a claro"/>}
+      </button>
     </nav>
   )
 }

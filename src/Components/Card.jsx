@@ -4,12 +4,18 @@ import { useGlobalStates } from '../Contexts/global.context';
 import '../css/Card.css'
 
 const Card = ({name, username, id}) => {
-  const {favsDispatch} = useGlobalStates()
+  const {favsState, favsDispatch} = useGlobalStates()
   const {themeState} = useGlobalStates()
 
-  const onAddFav = e => {
+  const isAdded = favsState.find( fav => fav.id === id)
+
+  const addFav = e => {
     e.stopPropagation()
-    favsDispatch({type: "addFavs", payload: { name, username, id}})    
+    if (isAdded){
+      favsDispatch({type: "deleteFavs", payload: id})
+    }else{
+      favsDispatch({type: "addFavs", payload: { name, username, id}})    
+    }
   } 
 
   return (
@@ -19,7 +25,12 @@ const Card = ({name, username, id}) => {
         </Link>
         <p>{name}</p>
         <p>{username}</p> 
-        <button onClick={onAddFav} className= {themeState? 'darkButton': ''}>Agregar a favoritos</button>
+        <button 
+          onClick={addFav} 
+          className= {themeState? 'darkButton': ''}
+        >
+          {isAdded ? <img src={rutes.favorito} alt="boton eliminar favorito"/> : <img src={rutes.noFavorito} alt="boton Agregar Favorito"/>}
+        </button>
       </div> 
   );
 };

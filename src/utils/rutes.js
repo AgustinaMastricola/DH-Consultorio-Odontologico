@@ -9,5 +9,9 @@ export const rutes = {
   logo_face:"./images/ico-facebook.png",
   logo_what:"./images/ico-whatsapp.png",
   logo_tik:"./images/ico-tiktok.png",
-  img_doctor: "./images/doctor.jpg"
+  img_doctor: "./images/doctor.jpg",
+  favorito: "./images/fav.png",
+  noFavorito: "./images/noFav.png",
+  toDark: "./images/moon-toDark.png",
+  toLight: "./images/moon-toLight.png"
 }

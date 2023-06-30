@@ -13,6 +13,8 @@ export const reducerFavs = (state, action) => {
   switch (action.type) {
     case "addFavs":
       return  [...state, action.payload]
+    case "deleteFavs":
+      return state.filter(fav => fav.id !== action.payload)  
     default:
       throw new Error();
   }
