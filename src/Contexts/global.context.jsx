@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
-import { reducerDentistas, reducerFavs } from "./reducer";
+import { reducerDentistas, reducerFavs, reducerTheme } from "./reducer";
 
 const ContextGlobal = createContext();
 
@@ -9,9 +9,12 @@ const initialStateDentista = {
 }
 const initialStateFavs = JSON.parse(localStorage.getItem('favs')) || []
 
+const initialStateTheme = JSON.parse(localStorage.getItem('theme'))
+
 const ContextProvider = ({ children }) => {
   const [dentState, dentDispatch] = useReducer(reducerDentistas, initialStateDentista)
   const [favsState, favsDispatch] = useReducer(reducerFavs, initialStateFavs)
+  const [themeState, themeDispatch] = useReducer(reducerTheme, initialStateTheme)
   const url = "https://jsonplaceholder.typicode.com/users"
   
   useEffect(()=>{
@@ -24,10 +27,15 @@ const ContextProvider = ({ children }) => {
     localStorage.setItem('favs', JSON.stringify(favsState))
   },[favsState])
 
+  useEffect(()=>{
+    localStorage.setItem('theme', JSON.stringify(themeState))
+  },[themeState])
+
   return (
     <ContextGlobal.Provider value={{
       dentState, dentDispatch,
-      favsState, favsDispatch
+      favsState, favsDispatch,
+      themeState, themeDispatch
     }}>
       {children}
     </ContextGlobal.Provider>

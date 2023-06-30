@@ -12,8 +12,17 @@ export const reducerDentistas = (state, action) => {
 export const reducerFavs = (state, action) => {
   switch (action.type) {
     case "addFavs":
-      return  [...state,action.payload]
+      return  [...state, action.payload]
     default:
-      return null;
+      throw new Error();
+  }
+}
+
+export const reducerTheme = (state, action) => {
+  switch (action.type){
+    case 'toggle':
+      return action.payload
+    default:
+      throw new Error();
   }
 }

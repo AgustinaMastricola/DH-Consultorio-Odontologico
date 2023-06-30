@@ -7,6 +7,7 @@ const Detail = () => {
   const {dentState, dentDispatch} = useGlobalStates()
   const params = useParams()
   const url = `https://jsonplaceholder.typicode.com/users/${params.id}`
+  const {themeState} = useGlobalStates()
 
   useEffect(() => {
     fetch(url)

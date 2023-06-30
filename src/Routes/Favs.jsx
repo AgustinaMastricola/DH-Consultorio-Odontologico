@@ -4,6 +4,7 @@ import { useGlobalStates } from "../Contexts/global.context";
 
 const Favs = () => {
   const {favsState} = useGlobalStates()
+  const {themeState} = useGlobalStates()
 
   return (
     <>

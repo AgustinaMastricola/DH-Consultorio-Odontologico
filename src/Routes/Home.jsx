@@ -4,7 +4,7 @@ import { useGlobalStates } from "../Contexts/global.context"
 
 const Home = () => {
   const {dentState} = useGlobalStates()
-
+  const {themeState} = useGlobalStates()
   return (
     <main className="" >
       <h1>Profesionales</h1>
