@@ -5,7 +5,7 @@ import { useGlobalStates } from '../Contexts/global.context'
 const Footer = () => {
   const {themeState} = useGlobalStates()
   return (
-    <footer className={themeState? '': 'dark'}>
+    <footer className={themeState? 'darkFooter': ''}>
         <p>Powered by</p>
         <img src={rutes.logo_dhfooter} alt='DH-logo' />
         <img src={rutes.logo_face} alt="Facebook" />

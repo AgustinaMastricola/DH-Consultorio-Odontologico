@@ -15,35 +15,46 @@ nav{
   align-items: center;
   background-color: rgba(201, 205, 209, 0.815);
 }
+.darkNav{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.815);
+}
 nav > a{
   color: #000;
   text-decoration: none;
-  margin: 10px;
-  padding: 10px;
+  margin: 0 15px;
+  padding: 15px;
   cursor: pointer;
 }
-.themeButton{
-  background-color: #000000;
-  color: #e2e2e2;
-  width: 7rem;
-  height: 2.5rem;
-  margin-left: 5rem;
-  border: #c2c2c2 1px solid;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.themeButton:hover{
+a:hover{
   opacity: 70%;
 }
-
+button{
+  background-color: rgba(0, 0, 0, 0.89);
+  color: #c2c2c2;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  margin: 15px;
+  padding: 15px;
+  width: auto;
+  font-size: 16px;
+}
+button:hover{
+  opacity: 70%;
+}
 h1{
   text-align: center;
   padding: 25px;
+  margin: 0;
 }
 h2, p{
   text-align: center;
+  margin: 12px;
 }
-
 p, h4, h3{
   font-size: 20px;
 }
@@ -54,6 +65,7 @@ p, h4, h3{
   height: auto;
   flex-wrap: wrap;
   margin: auto 15rem;
+  padding: 20px;
 }
 footer {
   display: flex;
@@ -61,8 +73,17 @@ footer {
   text-align: center;
   padding: 2rem;
   height: 40px;
-  margin-top: 2rem;
+  margin-top: 0;
   background-color: rgba(175, 175, 175, 0.815);
+}
+.darkFooter{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  height: 40px;
+  margin-top: 0;
+  background-color: rgba(51, 51, 51, 0.815);
 }
 footer > img{
   margin-right: 20px;
@@ -77,4 +98,8 @@ footer > p{
 }
 .dark > a {
   color: rgb(190, 190, 190);
+}
+.darkButton{
+  background-color: #aaaaaa;
+  color: #000;
 }

@@ -5,6 +5,7 @@ import '../css/Card.css'
 
 const Card = ({name, username, id}) => {
   const {favsDispatch} = useGlobalStates()
+  const {themeState} = useGlobalStates()
 
   const onAddFav = e => {
     e.stopPropagation()
@@ -12,14 +13,14 @@ const Card = ({name, username, id}) => {
   } 
 
   return (
-    <div className="card">
-      <Link to={`/dentista/${id}`} >
-        <img className="img_card"src={rutes.img_doctor} alt="Imagen usuario" />
-      </Link>
-      <h4>{name}</h4>
-      <h4>{username}</h4> 
-      <button onClick={onAddFav} className="favButton">Agregar a favoritos</button>
-    </div>
+      <div className={themeState? 'card darkCard': 'card'}>
+        <Link to={`/dentista/${id}`} >
+          <img className="img_card"src={rutes.img_doctor} alt="Imagen usuario" />
+        </Link>
+        <p>{name}</p>
+        <p>{username}</p> 
+        <button onClick={onAddFav} className= {themeState? 'darkButton': ''}>Agregar a favoritos</button>
+      </div> 
   );
 };
 export default Card;

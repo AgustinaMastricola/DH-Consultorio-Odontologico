@@ -17,7 +17,7 @@ const Detail = () => {
   })
 
   return (
-    <main className={themeState? '': 'dark'}> 
+    <main className={themeState? 'dark': ''}> 
       <h1>Detalle del Dentista</h1>
       <table>
         <tr>

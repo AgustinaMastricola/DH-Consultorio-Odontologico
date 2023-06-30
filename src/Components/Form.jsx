@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import '../css/Form.css'
+import { useGlobalStates } from "../Contexts/global.context";
 
 const Form = () => {
+  const {themeState} = useGlobalStates()
   const [data, setData] = useState({
     name: '',
     email: ''
@@ -33,10 +35,10 @@ const Form = () => {
           <input name="name" type="text" onBlur={handleBlur}/>
           <label>Email </label>
           <input name="email" type="text" onBlur={handleBlur}/>
-          <button>Enviar</button>
+          <button className= {themeState? 'darkButton': ''}>Enviar</button>
         </fieldset>
-        {error && <p style={{color:"rgb(198, 43, 43)"}}>Por favor verifique su información nuevamente</p>}
-        {success && <p style={{color:"rgb(81, 87, 50)"}}>Gracias {data.name}, te contactaremos cuanto antes vía email.</p> }  
+        {error && <p className={themeState? 'darkMessage': 'error'}>Por favor verifique su información nuevamente</p>}
+        {success && <p className={themeState? 'darkMessage': 'success'}>Gracias {data.name}, te contactaremos cuanto antes vía email.</p> }  
       </form>
     </div>
   );

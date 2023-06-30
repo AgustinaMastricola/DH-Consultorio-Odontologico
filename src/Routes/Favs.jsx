@@ -7,9 +7,8 @@ const Favs = () => {
   const {themeState} = useGlobalStates()
 
   return (
-    <main className={themeState? '': 'dark'}>
+    <main className={themeState? 'dark': ''}>
       <h1>Tus dentistas favoritos</h1>
-      <div className="card-grid">
         <div className="card-grid">
           {favsState.length > 0 ? (
             favsState.map(fav => <Card key={fav.id} name={fav.name} username={fav.username} id={fav.id}/>)
@@ -17,7 +16,6 @@ const Favs = () => {
             <p>No tiene dentistas favoritos</p>
           )}
         </div>
-      </div>
     </main>
   );
 };

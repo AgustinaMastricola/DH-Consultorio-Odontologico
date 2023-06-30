@@ -12,13 +12,13 @@ const Navbar = () => {
   }
   console.log(themeState);
   return (
-    <nav className={themeState? '': 'dark'}>
+    <nav className={themeState? 'darkNav': ''}>
       <img src={rutes.logo_dh} alt='DH-logo'/>
       <Link to={rutes.home}><h3>Home</h3></Link>
       <Link to={rutes.favs}><h3>Favoritos</h3></Link>
       <Link to={rutes.contact}><h3>Contacto</h3></Link>
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      <button onClick={changeTheme} className= "themeButton"> Cambiar tema</button>
+      <button onClick={changeTheme} className= {themeState? 'darkButton': ''}>{themeState? 'Oscuro': 'Claro'}</button>
     </nav>
   )
 }

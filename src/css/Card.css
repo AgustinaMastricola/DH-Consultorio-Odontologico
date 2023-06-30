@@ -6,13 +6,12 @@
   height: auto;
   border: 0.5px solid rgb(136, 136, 136);
   border-radius: 25px;
-  background-color: white;
 }
 .img_card:hover{
   opacity: 60%;
 }
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 0.5px solid rgb(136, 136, 136);
 }
 .img_card{
   height: 300px;
@@ -20,18 +19,6 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
-.favButton{
-  background-color: rgba(0, 0, 0, 0.89);
-  padding: 10px;
-  border: none;
-  width: 80%;
-  height: 50px;
-  cursor: pointer;
-  font-size: 16px;
-  color: #c2c2c2;
-  border-radius: 50px;
-  margin-bottom: 10px;
-}
-.favButton:hover{
-  opacity: 70%;
+.darkCard{
+  color: rgb(190, 190, 190);
 }

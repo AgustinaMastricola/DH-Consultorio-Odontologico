@@ -6,7 +6,7 @@ const Contact = () => {
   const {themeState} = useGlobalStates()
 
   return (
-    <div className={themeState? '': 'dark'}>
+    <div className={themeState? 'dark': ''}>
       <h1>Contáctanos</h1>
       <p>Si tienes alguna consulta, dejanos tus datos para que nos comuniquemos de inmediato</p>
       <Form/>
