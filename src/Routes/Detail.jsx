@@ -1,18 +1,18 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import { useGlobalStates } from '../Contexts/global.context';
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Detail = () => {
-  const [dentista, setDentista] = useState({})
+  const {dentState, dentDispatch} = useGlobalStates()
   const params = useParams()
   const url = `https://jsonplaceholder.typicode.com/users/${params.id}`
 
-  useEffect(()=>{
+  useEffect(() => {
     fetch(url)
-    .then((res)=>res.json())
-    .then((data)=> setDentista(data))
-  },[url])
+    .then((res) =>res.json())
+    .then((data) => dentDispatch({type: 'getById', payload: data}))
+  })
 
   return (
     <> 
@@ -25,10 +25,10 @@ const Detail = () => {
           <th>WebSite</th>
         </tr>
         <tr>
-          <td>{dentista.name}</td>
-          <td>{dentista.email}</td>
-          <td>{dentista.phone}</td>
-          <td>{dentista.website}</td>
+          <td>{dentState.dentistaById.name}</td>
+          <td>{dentState.dentistaById.email}</td>
+          <td>{dentState.dentistaById.phone}</td>
+          <td>{dentState.dentistaById.website}</td>
         </tr>
       </table>
     </>

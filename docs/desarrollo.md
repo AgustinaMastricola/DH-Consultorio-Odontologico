@@ -40,9 +40,9 @@ Importa los componentes pertinentes para envolver la App y crear el enrutado de 
 
 Una vez definidas las rutas demandadas por la consigna, pasemos a crear los componentes que se verán en cada URL.
 
-- Recorda que para la página [/contacto](/docs/funcionalidades.md#pagina-2-contacto) deberás implementar un Form con sus validaciones
-- Para [/home](/docs/funcionalidades.md#pagina-1-inicio-home) mapear la información de la API y devolver una Card por cada dentista
-  - Crear un Link dinámico para el detalle de cada dentista en [/dentista/:id](/docs/funcionalidades.md#pagina-3-detalle-dentista)
+- Recorda que para la página [/contacto](/docs/funcionalidades.md#pagina-2-contacto) deberás implementar un Form con sus validaciones LISTO
+- Para [/home](/docs/funcionalidades.md#pagina-1-inicio-home) mapear la información de la API y devolver una Card por cada dentista LISTO
+  - Crear un Link dinámico para el detalle de cada dentista en [/dentista/:id](/docs/funcionalidades.md#pagina-3-detalle-dentista) LISTO
   - Para [/favs](/docs/funcionalidades.md#pagina-4-destacados) consumir la información del localStorage y devolver una Card por cada dentista destacado
 
 ### Paso 3: Implementación del Contexto Global

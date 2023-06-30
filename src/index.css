@@ -29,6 +29,9 @@ code {
   border-radius: 2px;
   cursor: pointer;
 }
+.themeButton:hover, .favButton:hover{
+  opacity: 70%;
+}
 
 h1, h2, p{
   text-align: center;
@@ -50,9 +53,6 @@ nav > a{
   padding: 10px;
   cursor: pointer;
 }
-a:hover{
-  color: rgb(136, 136, 136);
-} 
 
 footer {
   display: flex;
@@ -110,7 +110,9 @@ form button{
   height: auto;
   border: 0.5px solid rgb(136, 136, 136);
 }
-
+.img_card:hover{
+  opacity: 60%;
+}
 .card:hover{
   border: 0.5px solid rgb(206, 217, 142);
 }

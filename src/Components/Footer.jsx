@@ -1,14 +1,15 @@
 import React from 'react'
+import { rutes } from '../utils/rutes'
 
 const Footer = () => {
   return (
     <footer>
         <p>Powered by</p>
-        <img className="logo" src="./images/DH.png" alt='DH-logo' />
-        <img src="./images/ico-facebook.png" alt="Facebook" />
-        <img src="./images/ico-instagram.png" alt="Instagram" />
-        <img src="./images/ico-tiktok.png" alt="TikTok" />
-        <img src="./images/ico-whatsapp.png" alt="Whatsapp" />
+        <img className="logo" src={rutes.logo_dhfooter} alt='DH-logo' />
+        <img src={rutes.logo_face} alt="Facebook" />
+        <img src={rutes.logo_inst} alt="Instagram" />
+        <img src={rutes.logo_tik} alt="TikTok" />
+        <img src={rutes.logo_what}alt="Whatsapp" />
     </footer>
   )
 }
