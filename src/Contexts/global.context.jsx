@@ -9,7 +9,7 @@ const initialStateDentista = {
 }
 const initialStateFavs = JSON.parse(localStorage.getItem('favs')) || []
 
-const initialStateTheme = JSON.parse(localStorage.getItem('theme'))
+const initialStateTheme = JSON.parse(localStorage.getItem('theme')) || false
 
 const ContextProvider = ({ children }) => {
   const [dentState, dentDispatch] = useReducer(reducerDentistas, initialStateDentista)

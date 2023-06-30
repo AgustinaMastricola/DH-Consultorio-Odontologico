@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
         <p>Powered by</p>
-        <img className="logo" src={rutes.logo_dhfooter} alt='DH-logo' />
+        <img src={rutes.logo_dhfooter} alt='DH-logo' />
         <img src={rutes.logo_face} alt="Facebook" />
         <img src={rutes.logo_inst} alt="Instagram" />
         <img src={rutes.logo_tik} alt="TikTok" />

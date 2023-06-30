@@ -1,0 +1,25 @@
+fieldset{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  font-size: 20px;
+  border-radius: 5px;
+}
+fieldset > input{
+  width: auto;
+  height: 40px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+form button{
+  margin-top: 10px;
+  color:#c2c2c2;
+  font-size: 18px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+}

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { rutes } from "../utils/rutes";
 import { useGlobalStates } from '../Contexts/global.context';
+import '../css/Card.css'
 
 const Card = ({name, username, id}) => {
   const {favsDispatch} = useGlobalStates()
@@ -11,7 +12,7 @@ const Card = ({name, username, id}) => {
   } 
 
   return (
-    <div className="card">
+    <div className="card ">
       <Link to={`/dentista/${id}`} >
         <img className="img_card"src={rutes.img_doctor} alt="Imagen usuario" />
       </Link>

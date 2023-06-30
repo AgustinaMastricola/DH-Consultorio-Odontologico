@@ -7,8 +7,8 @@ const Contact = () => {
 
   return (
     <div>
-      <h1>Quieres saber mas?</h1>
-      <p>Envianos tus datos así te contactamos!</p>
+      <h1>Contáctanos</h1>
+      <p>Si tienes alguna consulta, dejanos tus datos para que nos comuniquemos de inmediato</p>
       <Form/>
     </div>
   )
