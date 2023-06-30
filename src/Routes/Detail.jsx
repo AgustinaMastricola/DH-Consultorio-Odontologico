@@ -17,7 +17,7 @@ const Detail = () => {
   })
 
   return (
-    <> 
+    <main className={themeState? '': 'dark'}> 
       <h1>Detalle del Dentista</h1>
       <table>
         <tr>
@@ -33,7 +33,7 @@ const Detail = () => {
           <td>{dentState.dentistaById.website}</td>
         </tr>
       </table>
-    </>
+    </main>
   )
 }
 

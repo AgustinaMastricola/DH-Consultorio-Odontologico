@@ -7,7 +7,7 @@ const Favs = () => {
   const {themeState} = useGlobalStates()
 
   return (
-    <>
+    <main className={themeState? '': 'dark'}>
       <h1>Tus dentistas favoritos</h1>
       <div className="card-grid">
         <div className="card-grid">
@@ -18,7 +18,7 @@ const Favs = () => {
           )}
         </div>
       </div>
-    </>
+    </main>
   );
 };
 export default Favs;

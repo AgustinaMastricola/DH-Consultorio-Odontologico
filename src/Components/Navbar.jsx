@@ -12,7 +12,7 @@ const Navbar = () => {
   }
   console.log(themeState);
   return (
-    <nav className="">
+    <nav className={themeState? '': 'dark'}>
       <img src={rutes.logo_dh} alt='DH-logo'/>
       <Link to={rutes.home}><h3>Home</h3></Link>
       <Link to={rutes.favs}><h3>Favoritos</h3></Link>

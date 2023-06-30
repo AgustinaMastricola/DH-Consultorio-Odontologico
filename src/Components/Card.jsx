@@ -12,7 +12,7 @@ const Card = ({name, username, id}) => {
   } 
 
   return (
-    <div className="card ">
+    <div className="card">
       <Link to={`/dentista/${id}`} >
         <img className="img_card"src={rutes.img_doctor} alt="Imagen usuario" />
       </Link>

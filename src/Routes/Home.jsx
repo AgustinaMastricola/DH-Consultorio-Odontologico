@@ -5,8 +5,9 @@ import { useGlobalStates } from "../Contexts/global.context"
 const Home = () => {
   const {dentState} = useGlobalStates()
   const {themeState} = useGlobalStates()
+
   return (
-    <main className="" >
+    <main className={themeState? '': 'dark'} >
       <h1>Profesionales</h1>
       <div className='card-grid'>
       {dentState.dentistaList.map(dent => <Card key={dent.id} id={dent.id} name={dent.name} username={dent.username}/>)}
